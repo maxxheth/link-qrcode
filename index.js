@@ -132,6 +132,11 @@ const options = program.opts();
 
             const qrCodeImg = `<img src="${qrCode}" alt="QR Code">`;
 
+            // Define a path to save the QR code as a PNG file
+            const qrCodeFilePath = `qr_code_${i}.png`;
+            // Save the QR code as a PNG file
+            await QRCode.toFile(qrCodeFilePath, url);
+
             records.push({ url, qrCode, qrCodeImg });
         }
 
