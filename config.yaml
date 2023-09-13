@@ -1,0 +1,3 @@
+input: test.csv
+baseUrl: https://edfx.co/assets/misc/vcards
+imageSourceDir: images
