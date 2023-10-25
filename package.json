@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "process": "node index.js --config './config.yaml'"
+    "process": "bun index.js --config './config.yaml'"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@faker-js/faker": "^8.0.2",
     "commander": "^11.0.0",
     "csv-writer": "^1.6.0",
     "js-yaml": "^4.1.0",
